@@ -107,6 +107,3 @@ class RoleManagement(commands.Cog):
 
         await role.edit(permissions=permissions)
         await ctx.send(f"Permissions {', '.join(perms)} have been removed from the role '{role.name}'.")
-
-def setup(bot):
-    bot.add_cog(RoleManagement(bot))
